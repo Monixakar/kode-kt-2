@@ -138,7 +138,8 @@ info.startCountdown(10)
 
 Vi starter med første versjon av spillet, bortsett fra en viktig ting: 
 nå skal energien fordeles urettferdig på to land, sånn som i den virkelige 
-verden. I det ene landet er det sandfarget bakgrunn, i det andre er det grønt. 
+verden. Det ene landet skal få mye energi, mens det andre landet skal få lite energi.
+
 
 ### Steg 2
 Vi begynner med å plassere energien slik at det er størst sannsynlighet 
@@ -147,7 +148,8 @@ Inn i  ``||loops.Repeat||``-løkken legger vi inn en
  ``||Logic:if true then else ||`` - blokk fra ``||Logic.Logic||`` menyen. 
  Legg den inn under ``||variables. set energi to..||``
 
-
+Tips: For å flytte en blokk holder du inne Ctrl samtidig som du tar tak 
+i blokka du ønsker å flytte.
 
 
 ```blocks
@@ -250,10 +252,6 @@ Nå skal det være 80 % sannsynlighet for at energien havner i landet med
 sandfarge. Flytt ``||scene.place energi on top of random ||`` inn i den 
 øverste av de ledige plassene i ``|| logic. if else||`` blokken. 
 
-Tips: For å flytte en blokk holder du inne Ctrl samtidig som du tar tak 
-i blokken du ønsker å flytte. 
-
-Du kan også kopiere blokker ved å høyreklikke på blokken og velge duplicate. 
 
 ```blocks
     
@@ -290,6 +288,7 @@ Det som legges under ``||Logic.else||`` vil få 20 % sannsynlighet.
 Kopier ``||scene.place energi on top of random ||`` og legg den under ``||logic.else||``.
 Flisen må endres til grønn. 
 
+Tips: Du kan kopiere en blokk ved å høyreklikke på blokken og velge Duplicate.
 
 ```blocks
 for (let index = 0; index < 100; index++) {
@@ -438,9 +437,11 @@ info.onCountdownEnd(function () {
 
 ### Steg 11
 
-Bra jobba ! Nå er du godt i gang med å programmere ditt eget spill :)
+Bra jobba! Nå er du godt i gang med å programmere ditt eget spill😊
+Hvor mange poeng klarer du å få, og hvem er best i klassen?  
 
-Hva har du lyst til å ha med videre i spillet ? 
+Hva har du lyst til å ha med videre i spillet ditt?
+
 
 ```blocks
 info.onCountdownEnd(function () {
@@ -511,3 +512,4 @@ scene.cameraFollowSprite(mySprite)
 
 
 ```
+
